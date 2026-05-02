@@ -1,65 +1,219 @@
-import Image from "next/image";
+const services = [
+  {
+    n: "01",
+    title: "Impuestos",
+    body: "Asesoramiento tributario nacional, provincial y municipal. Planificación fiscal, declaraciones juradas, asistencia en inspecciones y auditoría tributaria.",
+  },
+  {
+    n: "02",
+    title: "Auditoría",
+    body: "Auditoría de estados contables anuales e intermedios. Evaluación de control interno y revisión de cumplimiento previsional e impositivo.",
+  },
+  {
+    n: "03",
+    title: "Administración de Personal",
+    body: "Liquidación de sueldos y cargas sociales, contratos, legajos, declaraciones laborales y atención de inspecciones.",
+  },
+  {
+    n: "04",
+    title: "Contabilidad",
+    body: "Tercerización contable: registración, conciliación, estados contables, informes de gestión y flujos proyectados.",
+  },
+  {
+    n: "05",
+    title: "Servicios Jurídicos",
+    body: "Recursos contra determinaciones de deuda, ley penal tributaria previsional y derecho societario (constitución, fusiones, adquisiciones).",
+  },
+  {
+    n: "06",
+    title: "Consultoría",
+    body: "Operatorias de leasing, fideicomisos y reintegros de IVA de exportación.",
+  },
+];
+
+const team = [
+  { name: "[Nombre Apellido]", role: "Contador Público — Socio" },
+  { name: "[Nombre Apellido]", role: "Contador Público" },
+  { name: "[Nombre Apellido]", role: "Asesor Legal" },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="bg-bone text-ink">
+      {/* Header */}
+      <header className="border-b border-rule">
+        <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between font-mono text-[11px] tracking-[0.18em] uppercase">
+          <span>Estudio Roco</span>
+          <nav className="hidden md:flex gap-8 text-ink-soft">
+            <a href="#servicios" className="hover:text-ink">Servicios</a>
+            <a href="#nosotros" className="hover:text-ink">Nosotros</a>
+            <a href="#equipo" className="hover:text-ink">Equipo</a>
+            <a href="#contacto" className="hover:text-ink">Contacto</a>
+          </nav>
+          <span className="text-ink-soft">San Salvador de Jujuy · AR</span>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="border-b border-rule">
+        <div className="mx-auto max-w-6xl px-6 py-32 md:py-44">
+          <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-10">
+            EST. — Contadores Públicos y Asesores de Empresas
+          </p>
+          <h1 className="font-serif font-light tracking-[-0.02em] leading-[0.95] text-[14vw] md:text-[9rem]">
+            Estudio
+            <br />
+            <span className="italic text-moss">Roco.</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-12 max-w-xl text-lg md:text-xl leading-snug text-ink-soft">
+            Asesoramiento integral en impuestos, auditoría, contabilidad
+            y derecho societario para empresas y particulares de Jujuy.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Servicios */}
+      <section id="servicios" className="border-b border-rule">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="flex items-baseline justify-between mb-16">
+            <h2 className="font-serif text-3xl md:text-5xl tracking-tight">
+              Servicios
+            </h2>
+            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+              I — VI
+            </span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-14">
+            {services.map((s) => (
+              <article key={s.n} className="border-t border-rule pt-6">
+                <div className="flex items-baseline gap-6 mb-3">
+                  <span className="font-mono text-[11px] tracking-[0.18em] text-ink-soft">
+                    {s.n}
+                  </span>
+                  <h3 className="font-serif text-2xl tracking-tight">
+                    {s.title}
+                  </h3>
+                </div>
+                <p className="text-ink-soft leading-relaxed max-w-md">
+                  {s.body}
+                </p>
+              </article>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Nosotros */}
+      <section id="nosotros" className="border-b border-rule">
+        <div className="mx-auto max-w-6xl px-6 py-24 grid md:grid-cols-12 gap-10">
+          <div className="md:col-span-4">
+            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+              Nosotros
+            </span>
+          </div>
+          <div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-ink-soft">
+            <p>
+              <span className="float-left font-serif text-7xl leading-[0.85] mr-3 mt-1 text-ink">
+                [
+              </span>
+              Texto institucional placeholder. Quiénes somos, trayectoria,
+              valores y diferencial del estudio. Énfasis en capacitación
+              continua y trato cercano con el cliente.
+            </p>
+            <p>
+              Segundo párrafo placeholder con detalles sobre la propuesta
+              de valor: cobertura integral, conocimiento del contexto
+              local de Jujuy y respaldo profesional.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Equipo */}
+      <section id="equipo" className="border-b border-rule">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="flex items-baseline justify-between mb-12">
+            <h2 className="font-serif text-3xl md:text-5xl tracking-tight">
+              Equipo
+            </h2>
+            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+              {team.length.toString().padStart(2, "0")} integrantes
+            </span>
+          </div>
+          <ul className="divide-y divide-rule border-y border-rule">
+            {team.map((p) => (
+              <li
+                key={p.name + p.role}
+                className="py-6 flex items-baseline justify-between gap-6"
+              >
+                <span className="font-serif text-2xl md:text-3xl tracking-tight">
+                  {p.name}
+                </span>
+                <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft text-right">
+                  {p.role}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Contacto */}
+      <section id="contacto" className="border-b border-rule">
+        <div className="mx-auto max-w-6xl px-6 py-24 grid md:grid-cols-12 gap-10">
+          <div className="md:col-span-4">
+            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+              Contacto
+            </span>
+          </div>
+          <div className="md:col-span-8 space-y-8">
+            <h2 className="font-serif text-4xl md:text-6xl tracking-tight leading-[0.95]">
+              Hablemos.
+            </h2>
+            <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 font-mono text-sm">
+              <div>
+                <dt className="text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-1">
+                  Mail
+                </dt>
+                <dd>
+                  <a
+                    href="mailto:contacto@estudioroco.com.ar"
+                    className="hover:text-moss"
+                  >
+                    contacto@estudioroco.com.ar
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-1">
+                  Teléfono
+                </dt>
+                <dd>[+54 388 XXX XXXX]</dd>
+              </div>
+              <div>
+                <dt className="text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-1">
+                  Dirección
+                </dt>
+                <dd>[Calle 000, San Salvador de Jujuy]</dd>
+              </div>
+              <div>
+                <dt className="text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-1">
+                  Horario
+                </dt>
+                <dd>Lun a Vie · 09:00 — 18:00</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <div className="mx-auto max-w-6xl px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+          <span>© {new Date().getFullYear()} Estudio Roco</span>
+          <span>estudioroco.com.ar</span>
+        </div>
+      </footer>
+    </main>
   );
 }
