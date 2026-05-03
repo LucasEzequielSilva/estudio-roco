@@ -18,15 +18,16 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://estudioroco.com.ar"),
   title: {
-    default: "Estudio Roco — Contadores Públicos y Asesores de Empresas",
+    default:
+      "Estudio Roco — Estudio jurídico contable especializado en impuestos · Jujuy",
     template: "%s — Estudio Roco",
   },
   description:
-    "Estudio contable en Jujuy. Asesoramiento impositivo, auditoría, sueldos, contabilidad, servicios jurídicos y consultoría para empresas y particulares.",
+    "Estudio jurídico contable en San Salvador de Jujuy, especializado en impuestos. Planificación impositiva, auditoría, sueldos, contabilidad, servicios jurídicos y consultoría para empresas y particulares.",
   openGraph: {
-    title: "Estudio Roco",
+    title: "Estudio Roco — Jurídico contable especializado en impuestos",
     description:
-      "Contadores Públicos y Asesores de Empresas en Jujuy.",
+      "Estudio jurídico contable de Jujuy, especializado en impuestos. Asesoramiento integral para empresas y particulares.",
     url: "https://estudioroco.com.ar",
     siteName: "Estudio Roco",
     locale: "es_AR",

@@ -1,6 +1,6 @@
 # Estudio Roco
 
-Sitio web del Estudio Roco — Contadores Públicos y Asesores de Empresas (San Salvador de Jujuy).
+Sitio web del Estudio Roco — Estudio jurídico contable especializado en impuestos (San Salvador de Jujuy).
 
 - Producción: https://estudioroco.com.ar
 - Stack: Next.js 16 · React 19 · TypeScript · Tailwind v4

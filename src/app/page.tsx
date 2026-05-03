@@ -58,7 +58,7 @@ export default function Home() {
       <section className="border-b border-rule">
         <div className="mx-auto max-w-6xl px-6 py-32 md:py-44">
           <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-10">
-            EST. — Contadores Públicos y Asesores de Empresas
+            EST. 2010 · Estudio jurídico contable
           </p>
           <h1 className="font-serif font-light tracking-[-0.02em] leading-[0.95] text-[14vw] md:text-[9rem]">
             Estudio
@@ -66,8 +66,9 @@ export default function Home() {
             <span className="italic text-moss">Roco.</span>
           </h1>
           <p className="mt-12 max-w-xl text-lg md:text-xl leading-snug text-ink-soft">
-            Asesoramiento integral en impuestos, auditoría, contabilidad
-            y derecho societario para empresas y particulares de Jujuy.
+            Estudio jurídico contable de Jujuy, especializado en impuestos.
+            Asesoramiento integral en planificación impositiva, auditoría,
+            contabilidad y derecho societario para empresas y particulares.
           </p>
         </div>
       </section>
@@ -177,10 +178,10 @@ export default function Home() {
                 </dt>
                 <dd>
                   <a
-                    href="mailto:contacto@estudioroco.com.ar"
+                    href="mailto:davidruano@estudioroco.com.ar"
                     className="hover:text-moss"
                   >
-                    contacto@estudioroco.com.ar
+                    davidruano@estudioroco.com.ar
                   </a>
                 </dd>
               </div>
@@ -188,19 +189,27 @@ export default function Home() {
                 <dt className="text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-1">
                   Teléfono
                 </dt>
-                <dd>[+54 388 XXX XXXX]</dd>
+                <dd>
+                  <a href="tel:+5493885053766" className="hover:text-moss">
+                    +54 9 3885 05-3766
+                  </a>
+                </dd>
               </div>
-              <div>
+              <div className="sm:col-span-2">
                 <dt className="text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-1">
                   Dirección
                 </dt>
-                <dd>[Calle 000, San Salvador de Jujuy]</dd>
+                <dd className="leading-relaxed">
+                  19 de Abril 683, 8° A · Edificio AMERIAN
+                  <br />
+                  San Salvador de Jujuy · Jujuy · Argentina
+                </dd>
               </div>
-              <div>
+              <div className="sm:col-span-2">
                 <dt className="text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-1">
                   Horario
                 </dt>
-                <dd>Lun a Vie · 09:00 — 18:00</dd>
+                <dd>Lun a Vie · 08:00 — 13:00 · 16:00 — 20:00</dd>
               </div>
             </dl>
           </div>
@@ -210,7 +219,7 @@ export default function Home() {
       {/* Footer */}
       <footer>
         <div className="mx-auto max-w-6xl px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
-          <span>© {new Date().getFullYear()} Estudio Roco</span>
+          <span>© {new Date().getFullYear()} Estudio Roco &amp; Asociados S.R.L.</span>
           <span>estudioroco.com.ar</span>
         </div>
       </footer>
