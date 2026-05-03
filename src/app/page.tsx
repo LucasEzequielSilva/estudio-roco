@@ -32,9 +32,16 @@ const services = [
 ];
 
 const team = [
-  { name: "[Nombre Apellido]", role: "Contador Público — Socio" },
-  { name: "[Nombre Apellido]", role: "Contador Público" },
-  { name: "[Nombre Apellido]", role: "Asesor Legal" },
+  {
+    name: "David Ezequiel Ruano",
+    role: "Contador Público — Socio",
+    bio: "Contador Público (UNC). Ejerce la profesión de manera independiente desde 2012. Docente universitario en UNJu y UCSE en finanzas y mercado de capitales. Ex asesor técnico en el Honorable Senado de la Nación.",
+  },
+  {
+    name: "Francisco Rodríguez Correa",
+    role: "Contador Público — Socio",
+    bio: "Contador Público Nacional especializado en escalamiento empresarial. Capacitación en Escuela de Negocios de Barcelona, Harvard Medical School, UNT y UTN. Foco en administración, reestructuración y ecosistema emprendedor.",
+  },
 ];
 
 export default function Home() {
@@ -115,16 +122,19 @@ export default function Home() {
           <div className="md:col-span-8 space-y-6 text-lg leading-relaxed text-ink-soft">
             <p>
               <span className="float-left font-serif text-7xl leading-[0.85] mr-3 mt-1 text-ink">
-                [
+                F
               </span>
-              Texto institucional placeholder. Quiénes somos, trayectoria,
-              valores y diferencial del estudio. Énfasis en capacitación
-              continua y trato cercano con el cliente.
+              undado en 2010 en San Salvador de Jujuy, Estudio Roco &amp;
+              Asociados es un estudio jurídico contable conducido por dos
+              Contadores Públicos con formación complementaria entre la
+              práctica académica, la experiencia institucional y la gestión
+              empresarial.
             </p>
             <p>
-              Segundo párrafo placeholder con detalles sobre la propuesta
-              de valor: cobertura integral, conocimiento del contexto
-              local de Jujuy y respaldo profesional.
+              Asesoramos a empresas y particulares con un enfoque integral:
+              planificación impositiva, auditoría, contabilidad y derecho
+              societario, sostenidos en una práctica de capacitación continua
+              y trato cercano con cada cliente.
             </p>
           </div>
         </div>
@@ -138,21 +148,23 @@ export default function Home() {
               Equipo
             </h2>
             <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
-              {team.length.toString().padStart(2, "0")} integrantes
+              {team.length.toString().padStart(2, "0")} socios
             </span>
           </div>
           <ul className="divide-y divide-rule border-y border-rule">
             {team.map((p) => (
-              <li
-                key={p.name + p.role}
-                className="py-6 flex items-baseline justify-between gap-6"
-              >
-                <span className="font-serif text-2xl md:text-3xl tracking-tight">
-                  {p.name}
-                </span>
-                <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft text-right">
-                  {p.role}
-                </span>
+              <li key={p.name} className="py-8 grid md:grid-cols-12 gap-6">
+                <div className="md:col-span-5 flex flex-col gap-2">
+                  <span className="font-serif text-2xl md:text-3xl tracking-tight leading-tight">
+                    {p.name}
+                  </span>
+                  <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+                    {p.role}
+                  </span>
+                </div>
+                <p className="md:col-span-7 text-ink-soft leading-relaxed max-w-xl">
+                  {p.bio}
+                </p>
               </li>
             ))}
           </ul>

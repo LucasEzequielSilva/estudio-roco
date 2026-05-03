@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Resolve-DnsName *2)",
+      "PowerShell(nslookup *)",
+      "PowerShell(New-Item *)",
+      "PowerShell(Get-Item *)",
+      "PowerShell($files = Get-ChildItem \"C:\\\\Users\\\\Lucas\\\\Desktop\" -Recurse -Depth 1 -ErrorAction SilentlyContinue | Where-Object { $_.Name -match \"fran|david|roco\" -and -not $_.PSIsContainer }; $files | Select-Object FullName, Length)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Lucas\\\\Desktop\" -ErrorAction SilentlyContinue | Where-Object { -not $_.PSIsContainer } | Select-Object Name | Format-Table -AutoSize)"
+    ]
+  }
+}
