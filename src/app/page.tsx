@@ -53,7 +53,7 @@ export default function Home() {
     <main className="bg-bone text-ink">
       {/* Header */}
       <header className="border-b border-rule">
-        <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between font-mono text-[11px] tracking-[0.18em] uppercase">
+        <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between font-mono text-[13px] tracking-[0.18em] uppercase">
           <span>Estudio Roco</span>
           <nav className="hidden md:flex gap-8 text-ink-soft">
             <a href="#servicios" className="hover:text-ink">Servicios</a>
@@ -68,7 +68,7 @@ export default function Home() {
       {/* Hero */}
       <section className="border-b border-rule">
         <div className="mx-auto max-w-6xl px-6 py-32 md:py-44">
-          <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-10">
+          <p className="font-mono text-[13px] tracking-[0.18em] uppercase text-ink-soft mb-10">
             EST. 2010 · Estudio jurídico contable
           </p>
           <h1 className="font-serif font-light tracking-[-0.02em] leading-[0.95] text-[14vw] md:text-[9rem]">
@@ -91,7 +91,7 @@ export default function Home() {
             <h2 className="font-serif text-3xl md:text-5xl tracking-tight">
               Servicios
             </h2>
-            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+            <span className="font-mono text-[13px] tracking-[0.18em] uppercase text-ink-soft">
               I — VI
             </span>
           </div>
@@ -99,7 +99,7 @@ export default function Home() {
             {services.map((s) => (
               <article key={s.n} className="border-t border-rule pt-6">
                 <div className="flex items-baseline gap-6 mb-3">
-                  <span className="font-mono text-[11px] tracking-[0.18em] text-ink-soft">
+                  <span className="font-mono text-[13px] tracking-[0.18em] text-ink-soft">
                     {s.n}
                   </span>
                   <h3 className="font-serif text-2xl tracking-tight">
@@ -119,7 +119,7 @@ export default function Home() {
       <section id="nosotros" className="border-b border-rule">
         <div className="mx-auto max-w-6xl px-6 py-24 grid md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
-            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+            <span className="font-mono text-[13px] tracking-[0.18em] uppercase text-ink-soft">
               Nosotros
             </span>
           </div>
@@ -151,7 +151,7 @@ export default function Home() {
             <h2 className="font-serif text-3xl md:text-5xl tracking-tight">
               Equipo
             </h2>
-            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+            <span className="font-mono text-[13px] tracking-[0.18em] uppercase text-ink-soft">
               {team.length.toString().padStart(2, "0")} socios
             </span>
           </div>
@@ -171,7 +171,7 @@ export default function Home() {
                   <span className="font-serif text-2xl md:text-3xl tracking-tight leading-tight">
                     {p.name}
                   </span>
-                  <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+                  <span className="font-mono text-[13px] tracking-[0.18em] uppercase text-ink-soft">
                     {p.role}
                   </span>
                 </div>
@@ -188,7 +188,7 @@ export default function Home() {
       <section id="contacto" className="border-b border-rule">
         <div className="mx-auto max-w-6xl px-6 py-24 grid md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
-            <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+            <span className="font-mono text-[13px] tracking-[0.18em] uppercase text-ink-soft">
               Contacto
             </span>
           </div>
@@ -198,7 +198,7 @@ export default function Home() {
             </h2>
             <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 font-mono text-sm">
               <div>
-                <dt className="text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-1">
+                <dt className="text-[13px] tracking-[0.18em] uppercase text-ink-soft mb-1">
                   Mail
                 </dt>
                 <dd>
@@ -211,7 +211,7 @@ export default function Home() {
                 </dd>
               </div>
               <div>
-                <dt className="text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-1">
+                <dt className="text-[13px] tracking-[0.18em] uppercase text-ink-soft mb-1">
                   Teléfono
                 </dt>
                 <dd>
@@ -221,7 +221,7 @@ export default function Home() {
                 </dd>
               </div>
               <div className="sm:col-span-2">
-                <dt className="text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-1">
+                <dt className="text-[13px] tracking-[0.18em] uppercase text-ink-soft mb-1">
                   Dirección
                 </dt>
                 <dd className="leading-relaxed">
@@ -231,7 +231,7 @@ export default function Home() {
                 </dd>
               </div>
               <div className="sm:col-span-2">
-                <dt className="text-[11px] tracking-[0.18em] uppercase text-ink-soft mb-1">
+                <dt className="text-[13px] tracking-[0.18em] uppercase text-ink-soft mb-1">
                   Horario
                 </dt>
                 <dd>Lun a Vie · 08:00 — 13:00 · 16:00 — 20:00</dd>
@@ -243,7 +243,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer>
-        <div className="mx-auto max-w-6xl px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+        <div className="mx-auto max-w-6xl px-6 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 font-mono text-[13px] tracking-[0.18em] uppercase text-ink-soft">
           <span>© {new Date().getFullYear()} Estudio Roco &amp; Asociados S.R.L.</span>
           <span>estudioroco.com.ar</span>
         </div>
