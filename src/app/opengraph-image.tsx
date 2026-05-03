@@ -60,14 +60,15 @@ export default async function OG() {
         <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
           <div
             style={{
-              fontSize: 200,
+              fontSize: 168,
               fontWeight: 300,
               lineHeight: 0.95,
-              letterSpacing: -4,
+              letterSpacing: -3,
               display: "flex",
+              whiteSpace: "nowrap",
             }}
           >
-            <span>Estudio </span>
+            <span>Estudio&nbsp;</span>
             <span style={{ fontStyle: "italic", color: "#2D4A3E" }}>Roco.</span>
           </div>
           <div
