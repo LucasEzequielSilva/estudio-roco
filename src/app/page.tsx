@@ -71,11 +71,11 @@ export default function Home() {
           <p className="font-mono text-[13px] tracking-[0.18em] uppercase text-ink-soft mb-10">
             EST. 2010 · Estudio jurídico contable
           </p>
-          <h1 className="font-serif font-light tracking-[-0.02em] leading-[0.95] text-[14vw] md:text-[9rem]">
+          <h1 className="font-serif font-light tracking-[-0.02em] leading-[1] text-[11vw] md:text-[7rem]">
             Estudio
             <br />
             <span className="italic text-moss">Roco</span>
-            <span className="block italic text-moss text-[5vw] md:text-[2.75rem] mt-3 md:mt-4">
+            <span className="block italic text-moss text-[4.5vw] md:text-[2.5rem] mt-3 md:mt-4">
               &amp; Asociados
             </span>
           </h1>
