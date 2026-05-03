@@ -16,15 +16,15 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 const SITE_URL = "https://estudioroco.com.ar";
-const SITE_NAME = "Estudio Roco";
+const SITE_NAME = "Estudio Roco & Asociados";
 const TITLE =
-  "Estudio Roco — Estudio jurídico contable especializado en impuestos · Jujuy";
+  "Estudio Roco & Asociados — Estudio jurídico contable especializado en impuestos · Jujuy";
 const DESCRIPTION =
   "Estudio jurídico contable en San Salvador de Jujuy, especializado en impuestos. Planificación impositiva, auditoría, sueldos, contabilidad, servicios jurídicos y consultoría para empresas y particulares.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: TITLE, template: "%s — Estudio Roco" },
+  title: { default: TITLE, template: "%s — Estudio Roco & Asociados" },
   description: DESCRIPTION,
   applicationName: SITE_NAME,
   authors: [{ name: SITE_NAME }],
@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     "Liquidación de sueldos Jujuy",
     "Estudio jurídico contable",
     "Estudio Roco",
+    "Estudio Roco & Asociados",
     "San Salvador de Jujuy",
   ],
   alternates: { canonical: SITE_URL },

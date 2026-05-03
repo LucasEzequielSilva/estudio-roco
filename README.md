@@ -1,6 +1,6 @@
-# Estudio Roco
+# Estudio Roco & Asociados
 
-Sitio web del Estudio Roco — Estudio jurídico contable especializado en impuestos (San Salvador de Jujuy).
+Sitio web del Estudio Roco & Asociados — Estudio jurídico contable especializado en impuestos (San Salvador de Jujuy).
 
 - Producción: https://estudioroco.com.ar
 - Preview: https://estudio-roco.vercel.app

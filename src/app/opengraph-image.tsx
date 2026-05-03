@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Estudio Roco — Estudio jurídico contable especializado en impuestos · Jujuy";
+export const alt = "Estudio Roco & Asociados — Estudio jurídico contable especializado en impuestos · Jujuy";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -20,7 +20,7 @@ async function loadFont(family: string, weight: number, text: string) {
 
 export default async function OG() {
   const text =
-    "Estudio Roco. EST 2010 · ESTUDIO JURÍDICO CONTABLE · JUJUY estudioroco.com.ar";
+    "Estudio Roco & Asociados EST 2010 · ESTUDIO JURÍDICO CONTABLE · JUJUY estudioroco.com.ar";
   const [serifRegular, serifLight, mono] = await Promise.all([
     loadFont("Fraunces", 400, text),
     loadFont("Fraunces", 300, text),
@@ -53,7 +53,7 @@ export default async function OG() {
             textTransform: "uppercase",
           }}
         >
-          <span>Estudio Roco · EST 2010</span>
+          <span>Estudio Roco & Asociados · EST 2010</span>
           <span>Jujuy · AR</span>
         </div>
 
@@ -69,7 +69,19 @@ export default async function OG() {
             }}
           >
             <span>Estudio&nbsp;</span>
-            <span style={{ fontStyle: "italic", color: "#2D4A3E" }}>Roco.</span>
+            <span style={{ fontStyle: "italic", color: "#2D4A3E" }}>Roco</span>
+            <span
+              style={{
+                fontStyle: "italic",
+                color: "#2D4A3E",
+                fontSize: 56,
+                marginLeft: 16,
+                alignSelf: "flex-end",
+                paddingBottom: 18,
+              }}
+            >
+              &amp; Asociados
+            </span>
           </div>
           <div
             style={{

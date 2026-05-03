@@ -43,7 +43,7 @@ const team = [
   {
     name: "Francisco Rodríguez Correa",
     role: "Contador Público — Socio",
-    bio: "Contador Público Nacional especializado en escalamiento empresarial. Capacitación en Escuela de Negocios de Barcelona, Universidad Nacional de Tucumán y Universidad Tecnológica Nacional. Ejerce en Estudio Roco & Asociados. Foco en administración, reestructuración y ecosistema emprendedor.",
+    bio: "Contador Público Nacional especializado en escalamiento empresarial. Capacitación en Escuela de Negocios de Barcelona, Universidad Nacional de Tucumán y Universidad Tecnológica Nacional. Foco en administración, reestructuración y ecosistema emprendedor.",
     photo: "/team/fran.png",
   },
 ];
@@ -54,7 +54,7 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-rule">
         <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between font-mono text-[13px] tracking-[0.18em] uppercase">
-          <span>Estudio Roco</span>
+          <span>Estudio Roco &amp; Asociados</span>
           <nav className="hidden md:flex gap-8 text-ink-soft">
             <a href="#servicios" className="hover:text-ink">Servicios</a>
             <a href="#nosotros" className="hover:text-ink">Nosotros</a>
@@ -74,7 +74,10 @@ export default function Home() {
           <h1 className="font-serif font-light tracking-[-0.02em] leading-[0.95] text-[14vw] md:text-[9rem]">
             Estudio
             <br />
-            <span className="italic text-moss">Roco.</span>
+            <span className="italic text-moss">Roco</span>
+            <span className="block italic text-moss text-[5vw] md:text-[2.75rem] mt-3 md:mt-4">
+              &amp; Asociados
+            </span>
           </h1>
           <p className="mt-12 max-w-xl text-lg md:text-xl leading-snug text-ink-soft">
             Estudio jurídico contable de Jujuy, especializado en impuestos.
