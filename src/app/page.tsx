@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const services = [
   {
     n: "01",
@@ -36,11 +38,13 @@ const team = [
     name: "David Ezequiel Ruano",
     role: "Contador Público — Socio",
     bio: "Contador Público (UNC). Ejerce la profesión de manera independiente desde 2012. Docente universitario en UNJu y UCSE en finanzas y mercado de capitales. Ex asesor técnico en el Honorable Senado de la Nación.",
+    photo: "/team/david.png",
   },
   {
     name: "Francisco Rodríguez Correa",
     role: "Contador Público — Socio",
     bio: "Contador Público Nacional especializado en escalamiento empresarial. Capacitación en Escuela de Negocios de Barcelona, Harvard Medical School, UNT y UTN. Foco en administración, reestructuración y ecosistema emprendedor.",
+    photo: "/team/fran.png",
   },
 ];
 
@@ -153,8 +157,17 @@ export default function Home() {
           </div>
           <ul className="divide-y divide-rule border-y border-rule">
             {team.map((p) => (
-              <li key={p.name} className="py-8 grid md:grid-cols-12 gap-6">
-                <div className="md:col-span-5 flex flex-col gap-2">
+              <li key={p.name} className="py-10 grid md:grid-cols-12 gap-6">
+                <div className="md:col-span-3 relative aspect-[4/5] overflow-hidden bg-rule">
+                  <Image
+                    src={p.photo}
+                    alt={p.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                    className="object-cover grayscale contrast-[1.05]"
+                  />
+                </div>
+                <div className="md:col-span-3 flex flex-col gap-2">
                   <span className="font-serif text-2xl md:text-3xl tracking-tight leading-tight">
                     {p.name}
                   </span>
@@ -162,7 +175,7 @@ export default function Home() {
                     {p.role}
                   </span>
                 </div>
-                <p className="md:col-span-7 text-ink-soft leading-relaxed max-w-xl">
+                <p className="md:col-span-6 text-ink-soft leading-relaxed">
                   {p.bio}
                 </p>
               </li>
