@@ -43,7 +43,7 @@ const team = [
   {
     name: "Francisco Rodríguez Correa",
     role: "Contador Público — Socio",
-    bio: "Contador Público Nacional especializado en escalamiento empresarial. Capacitación en Escuela de Negocios de Barcelona, Harvard Medical School, UNT y UTN. Foco en administración, reestructuración y ecosistema emprendedor.",
+    bio: "Contador Público Nacional especializado en escalamiento empresarial. Capacitación en Escuela de Negocios de Barcelona, Universidad Nacional de Tucumán y Universidad Tecnológica Nacional. Ejerce en Estudio Roco & Asociados. Foco en administración, reestructuración y ecosistema emprendedor.",
     photo: "/team/fran.png",
   },
 ];
