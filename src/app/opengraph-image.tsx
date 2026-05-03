@@ -58,30 +58,32 @@ export default async function OG() {
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
-          <div
-            style={{
-              fontSize: 168,
-              fontWeight: 300,
-              lineHeight: 0.95,
-              letterSpacing: -3,
-              display: "flex",
-              whiteSpace: "nowrap",
-            }}
-          >
-            <span>Estudio&nbsp;</span>
-            <span style={{ fontStyle: "italic", color: "#2D4A3E" }}>Roco</span>
-            <span
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <div
               style={{
+                fontSize: 144,
+                fontWeight: 300,
+                lineHeight: 0.95,
+                letterSpacing: -3,
+                display: "flex",
+                whiteSpace: "nowrap",
+              }}
+            >
+              <span>Estudio&nbsp;</span>
+              <span style={{ fontStyle: "italic", color: "#2D4A3E" }}>Roco</span>
+            </div>
+            <div
+              style={{
+                fontSize: 52,
                 fontStyle: "italic",
                 color: "#2D4A3E",
-                fontSize: 56,
-                marginLeft: 16,
-                alignSelf: "flex-end",
-                paddingBottom: 18,
+                lineHeight: 1.1,
+                marginTop: 12,
+                display: "flex",
               }}
             >
               &amp; Asociados
-            </span>
+            </div>
           </div>
           <div
             style={{
