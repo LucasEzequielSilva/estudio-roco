@@ -33,6 +33,39 @@ const services = [
   },
 ];
 
+const clients = [
+  {
+    name: "Grupo Werchow",
+    sector: "Concesionaria oficial · Automotor",
+    logo: "/clients/werchow.png",
+  },
+  {
+    name: "La Veloz del Norte",
+    sector: "Transporte de pasajeros · Larga distancia",
+    logo: "/clients/la-veloz-del-norte.png",
+  },
+  {
+    name: "Beton",
+    sector: "Construcción · Hormigón elaborado",
+    logo: "/clients/beton.png",
+  },
+  {
+    name: "BIMAX",
+    sector: "Salud · Diagnóstico por imágenes",
+    logo: "/clients/bimax.png",
+  },
+  {
+    name: "Fides",
+    sector: "Salud · Centro médico",
+    logo: "/clients/fides.png",
+  },
+  {
+    name: "CCC",
+    sector: "Comercio mayorista · Distribución",
+    logo: "/clients/ccc.png",
+  },
+];
+
 const team = [
   {
     name: "David Ezequiel Ruano",
@@ -58,6 +91,7 @@ export default function Home() {
           <nav className="hidden md:flex gap-8 text-ink-soft">
             <a href="#servicios" className="hover:text-ink">Servicios</a>
             <a href="#nosotros" className="hover:text-ink">Nosotros</a>
+            <a href="#antecedentes" className="hover:text-ink">Antecedentes</a>
             <a href="#equipo" className="hover:text-ink">Equipo</a>
             <a href="#contacto" className="hover:text-ink">Contacto</a>
           </nav>
@@ -144,6 +178,90 @@ export default function Home() {
               y trato cercano con cada cliente.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Antecedentes / Clientes */}
+      <section id="antecedentes" className="border-b border-rule">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="grid md:grid-cols-12 gap-10 mb-16">
+            <div className="md:col-span-4">
+              <span className="font-mono text-[13px] tracking-[0.18em] uppercase text-ink-soft">
+                Antecedentes
+              </span>
+            </div>
+            <div className="md:col-span-8">
+              <h2 className="font-serif text-3xl md:text-5xl tracking-tight leading-[1.05]">
+                Empresas que confían
+                <br />
+                <span className="italic text-moss">en nuestro trabajo.</span>
+              </h2>
+              <p className="mt-6 max-w-xl text-lg leading-snug text-ink-soft">
+                Más de una década acompañando a compañías del NOA en su
+                operación impositiva, contable y societaria. Una muestra de
+                organizaciones que nos eligen como asesores de cabecera.
+              </p>
+            </div>
+          </div>
+
+          <ul className="grid grid-cols-2 md:grid-cols-3 border-t border-l border-rule">
+            {clients.map((c) => (
+              <li
+                key={c.name}
+                className="border-b border-r border-rule p-8 md:p-10 flex flex-col items-center justify-center gap-5 aspect-[4/3]"
+              >
+                <div className="relative w-full h-16 md:h-20">
+                  <Image
+                    src={c.logo}
+                    alt={c.name}
+                    fill
+                    sizes="(max-width: 768px) 40vw, 25vw"
+                    className="object-contain grayscale opacity-70 hover:opacity-100 transition-opacity"
+                  />
+                </div>
+                <div className="text-center">
+                  <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-ink-soft">
+                    {c.sector}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          <dl className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-x-10 gap-y-10 border-t border-rule pt-12">
+            <div>
+              <dt className="font-serif text-5xl md:text-6xl tracking-tight">
+                +15
+              </dt>
+              <dd className="mt-2 font-mono text-[12px] tracking-[0.18em] uppercase text-ink-soft">
+                Años de práctica
+              </dd>
+            </div>
+            <div>
+              <dt className="font-serif text-5xl md:text-6xl tracking-tight">
+                80+
+              </dt>
+              <dd className="mt-2 font-mono text-[12px] tracking-[0.18em] uppercase text-ink-soft">
+                Clientes activos
+              </dd>
+            </div>
+            <div>
+              <dt className="font-serif text-5xl md:text-6xl tracking-tight">
+                6
+              </dt>
+              <dd className="mt-2 font-mono text-[12px] tracking-[0.18em] uppercase text-ink-soft">
+                Sectores cubiertos
+              </dd>
+            </div>
+            <div>
+              <dt className="font-serif text-5xl md:text-6xl tracking-tight">
+                NOA
+              </dt>
+              <dd className="mt-2 font-mono text-[12px] tracking-[0.18em] uppercase text-ink-soft">
+                Alcance regional
+              </dd>
+            </div>
+          </dl>
         </div>
       </section>
 
